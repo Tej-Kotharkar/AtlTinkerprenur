@@ -22,6 +22,11 @@
 
         .navbar {
             background-color: #007bff;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar:hover {
+            background-color: #0056b3; /* Darker shade of blue on hover */
         }
 
         .navbar-brand img {
@@ -33,6 +38,19 @@
             font-size: 1.5rem;
             color: #fff;
             margin-left: 10px;
+        }
+
+        .navbar-toggler-icon {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #f8f9fa; /* Light gray on hover */
         }
 
         .carousel-item {
@@ -73,6 +91,53 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
+        .about-section {
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+
+        .about-section h3 {
+            color: #007bff;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-section .divider {
+            width: 60px;
+            height: 3px;
+            background-color: #007bff;
+            margin: 1.5rem auto;
+        }
+
+        .color-blindness-section {
+            background-color: #f8f9fa;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .color-blindness-section .color-blindness-box {
+            background-color: #007bff;
+            color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .color-blindness-section h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .color-blindness-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
         .footer {
             background-color: #007bff;
             color: #fff;
@@ -104,96 +169,91 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#home-section">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about-section">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Resources</a>
+                    <a class="nav-link" href="#resources-section">Resources</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact-section">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('images/slide1.jpg');">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Understanding Color Blindness</h5>
-                    <p>Explore the science behind color blindness and its different types.</p>
-                </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('images/slide2.jpg');">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Tools for Colorblind Individuals</h5>
-                    <p>Discover tools and resources designed to assist those with color vision deficiency.</p>
-                </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('images/slide3.jpg');">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Colour Blindness Test</h5>
-                    <p>Test Your Eyes for colour blindness</p>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
-    <!-- Content Section -->
-    <div class="content-section">
+    <!-- Home Section -->
+    <section id="home-section">
         <div class="container">
-            <h2>Welcome to Color Perceive</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                       
-                        <div class="card-body">
-                            <h5 class="card-title">Types of Color Blindness</h5>
-                            <p class="card-text">Learn about the different types of color blindness and their characteristics.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="text-center mb-4">Welcome to Color Perceive</h2>
+                    <p class="text-center">Color Perceive aims to educate and assist individuals with color blindness, offering insights into the different types of color vision deficiency, tools, and tests available to help navigate daily life.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        
-                        <div class="card-body">
-                            <h5 class="card-title">Tools and Resources</h5>
-                            <p class="card-text">Explore various tools designed to help those with color blindness.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h3>About Color Perceive</h3>
+                    <div class="divider"></div>
+                    <p>Color Perceive is dedicated to providing comprehensive information and resources for individuals affected by color blindness. We strive to enhance understanding and support for color vision deficiency through education, tools, and community engagement.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        
-                        <div class="card-body">
-                            <h5 class="card-title">Colour Blindness Test</h5>
-                            <p class="card-text">Check your Eyes for Colour Blindness</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Blindness Section -->
+    <section id="color-blindness-section" class="color-blindness-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="color-blindness-box">
+                        <h3>Understanding Color Blindness</h3>
+                        <p>Explore the science behind color blindness and its different types.</p>
+                        <a href="https://tej-kotharkar.github.io/Colour-Blind-Test/" class="btn btn-light">Take Color Blindness Test</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources-section" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="text-center mb-4">Resources</h2>
+                    <p>Explore the resources available at Color Perceive:</p>
+                    <ul>
+                        <li><strong>Types of Color Blindness:</strong> Learn about the different types and their characteristics. <a href="https://en.wikipedia.org/wiki/Color_blindness">Read more</a>.</li>
+                        <li><strong>Tools and Resources:</strong> Discover tools designed to assist those with color blindness. <a href="https://tej-kotharkar.github.io/Colour-Blind-Test/">Take a color blindness test</a>.</li>
+                        <li><strong>More Resources Coming Soon:</strong> Stay tuned for additional resources and updates.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="text-center mb-4">Contact Us</h2>
+                    <p>If you have any questions or feedback, please contact us:</p>
+                    <p><strong>Phone:</strong> 7620055698</p>
+                    <p><strong>Email:</strong> <a href="mailto:colourpercieve@gmail.com">colourpercieve@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
